@@ -1,0 +1,815 @@
+{
+  "contractName": "LotteryOneInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "manual_start_new_lottery",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "enter",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "manual_start_drawing",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "fulfill_drawing",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawWinnings",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"name\":\"enter\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"fulfill_drawing\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"manual_start_drawing\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"manual_start_new_lottery\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"withdrawBalance\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"withdrawWinnings\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/interfaces/LotteryOneInterface.sol\":\"LotteryOneInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/interfaces/LotteryOneInterface.sol\":{\"keccak256\":\"0xef66739ae8fb55566b466ac3c4506f220f736d5f32f35e69ba592a0daaef888e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b6f4b4937a477465940263729780f53b1cb1963675ca216a7089772f86e4327c\",\"dweb:/ipfs/QmSKMfe1KKVzKDUgujrT1KCaDdLJjwQuUqBeeDYxYU16nu\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ninterface LotteryOneInterface {\r\n    function manual_start_new_lottery() external;\r\n\r\n    function enter(uint[] memory) external payable;\r\n\r\n    function manual_start_drawing() external;\r\n\r\n    function fulfill_drawing(uint) external;\r\n\r\n    function withdrawWinnings(uint) external;\r\n\r\n    function withdrawBalance(uint) external;\r\n\r\n    function deposit() external payable;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\a18al\\Desktop\\lottery-one\\src\\contracts\\interfaces\\LotteryOneInterface.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/interfaces/LotteryOneInterface.sol",
+    "exportedSymbols": {
+      "LotteryOneInterface": [
+        6786
+      ]
+    },
+    "id": 6787,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6755,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:13"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LotteryOneInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 6786,
+        "linearizedBaseContracts": [
+          6786
+        ],
+        "name": "LotteryOneInterface",
+        "nameLocation": "70:19:13",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f782f683",
+            "id": 6758,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "manual_start_new_lottery",
+            "nameLocation": "106:24:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6756,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:2:13"
+            },
+            "returnParameters": {
+              "id": 6757,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "141:0:13"
+            },
+            "scope": 6786,
+            "src": "97:45:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "7944135d",
+            "id": 6764,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enter",
+            "nameLocation": "159:5:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6762,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6761,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6764,
+                  "src": "165:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6759,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "165:4:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 6760,
+                    "nodeType": "ArrayTypeName",
+                    "src": "165:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "164:15:13"
+            },
+            "returnParameters": {
+              "id": 6763,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "196:0:13"
+            },
+            "scope": 6786,
+            "src": "150:47:13",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "fde38380",
+            "id": 6767,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "manual_start_drawing",
+            "nameLocation": "214:20:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6765,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "234:2:13"
+            },
+            "returnParameters": {
+              "id": 6766,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:0:13"
+            },
+            "scope": 6786,
+            "src": "205:41:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "eaac28ce",
+            "id": 6772,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fulfill_drawing",
+            "nameLocation": "263:15:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6770,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6769,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6772,
+                  "src": "279:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6768,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:6:13"
+            },
+            "returnParameters": {
+              "id": 6771,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:0:13"
+            },
+            "scope": 6786,
+            "src": "254:40:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "14794702",
+            "id": 6777,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawWinnings",
+            "nameLocation": "311:16:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6775,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6774,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6777,
+                  "src": "328:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6773,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "328:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "327:6:13"
+            },
+            "returnParameters": {
+              "id": 6776,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "342:0:13"
+            },
+            "scope": 6786,
+            "src": "302:41:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "da76d5cd",
+            "id": 6782,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawBalance",
+            "nameLocation": "360:15:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6780,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6779,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6782,
+                  "src": "376:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6778,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:6:13"
+            },
+            "returnParameters": {
+              "id": 6781,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:13"
+            },
+            "scope": 6786,
+            "src": "351:40:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d0e30db0",
+            "id": 6785,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "408:7:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6783,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "415:2:13"
+            },
+            "returnParameters": {
+              "id": 6784,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "434:0:13"
+            },
+            "scope": 6786,
+            "src": "399:36:13",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6787,
+        "src": "60:378:13",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:407:13"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/src/contracts/interfaces/LotteryOneInterface.sol",
+    "exportedSymbols": {
+      "LotteryOneInterface": [
+        6786
+      ]
+    },
+    "id": 6787,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6755,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:13"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "LotteryOneInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 6786,
+        "linearizedBaseContracts": [
+          6786
+        ],
+        "name": "LotteryOneInterface",
+        "nameLocation": "70:19:13",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f782f683",
+            "id": 6758,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "manual_start_new_lottery",
+            "nameLocation": "106:24:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6756,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:2:13"
+            },
+            "returnParameters": {
+              "id": 6757,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "141:0:13"
+            },
+            "scope": 6786,
+            "src": "97:45:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "7944135d",
+            "id": 6764,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enter",
+            "nameLocation": "159:5:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6762,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6761,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6764,
+                  "src": "165:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 6759,
+                      "name": "uint",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "165:4:13",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 6760,
+                    "nodeType": "ArrayTypeName",
+                    "src": "165:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "164:15:13"
+            },
+            "returnParameters": {
+              "id": 6763,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "196:0:13"
+            },
+            "scope": 6786,
+            "src": "150:47:13",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "fde38380",
+            "id": 6767,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "manual_start_drawing",
+            "nameLocation": "214:20:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6765,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "234:2:13"
+            },
+            "returnParameters": {
+              "id": 6766,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:0:13"
+            },
+            "scope": 6786,
+            "src": "205:41:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "eaac28ce",
+            "id": 6772,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "fulfill_drawing",
+            "nameLocation": "263:15:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6770,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6769,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6772,
+                  "src": "279:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6768,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "279:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "278:6:13"
+            },
+            "returnParameters": {
+              "id": 6771,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:0:13"
+            },
+            "scope": 6786,
+            "src": "254:40:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "14794702",
+            "id": 6777,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawWinnings",
+            "nameLocation": "311:16:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6775,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6774,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6777,
+                  "src": "328:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6773,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "328:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "327:6:13"
+            },
+            "returnParameters": {
+              "id": 6776,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "342:0:13"
+            },
+            "scope": 6786,
+            "src": "302:41:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "da76d5cd",
+            "id": 6782,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawBalance",
+            "nameLocation": "360:15:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6780,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6779,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6782,
+                  "src": "376:4:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6778,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:6:13"
+            },
+            "returnParameters": {
+              "id": 6781,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "390:0:13"
+            },
+            "scope": 6786,
+            "src": "351:40:13",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d0e30db0",
+            "id": 6785,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deposit",
+            "nameLocation": "408:7:13",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6783,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "415:2:13"
+            },
+            "returnParameters": {
+              "id": 6784,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "434:0:13"
+            },
+            "scope": 6786,
+            "src": "399:36:13",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6787,
+        "src": "60:378:13",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:407:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-11-18T13:32:23.291Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

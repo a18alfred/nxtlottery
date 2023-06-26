@@ -1,0 +1,183 @@
+{
+  "contractName": "RandomnessInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getRandom",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getRandom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/interfaces/RandomnessInterface.sol\":\"RandomnessInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/interfaces/RandomnessInterface.sol\":{\"keccak256\":\"0xa8feaf28be0b3710803c0c4d541d259ac43b14f70f3c0a2adc39b3b1288b05a5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ab62a8ad60ffb5acad204ab9ef316c3d5dea18746755181cc38702ffee07430d\",\"dweb:/ipfs/QmcuGJmygMie7fZNtasDyBp8Z69cZBowQaRgWdXiHZ99RG\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ninterface RandomnessInterface {\r\n    function getRandom() external;\r\n}\r\n",
+  "sourcePath": "C:\\Users\\a18al\\Desktop\\lottery-one\\src\\contracts\\interfaces\\RandomnessInterface.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/interfaces/RandomnessInterface.sol",
+    "exportedSymbols": {
+      "RandomnessInterface": [
+        6792
+      ]
+    },
+    "id": 6793,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6788,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RandomnessInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 6792,
+        "linearizedBaseContracts": [
+          6792
+        ],
+        "name": "RandomnessInterface",
+        "nameLocation": "70:19:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "aacc5a17",
+            "id": 6791,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRandom",
+            "nameLocation": "106:9:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6789,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:14"
+            },
+            "returnParameters": {
+              "id": 6790,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "126:0:14"
+            },
+            "scope": 6792,
+            "src": "97:30:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6793,
+        "src": "60:70:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:99:14"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/src/contracts/interfaces/RandomnessInterface.sol",
+    "exportedSymbols": {
+      "RandomnessInterface": [
+        6792
+      ]
+    },
+    "id": 6793,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6788,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:14"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RandomnessInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 6792,
+        "linearizedBaseContracts": [
+          6792
+        ],
+        "name": "RandomnessInterface",
+        "nameLocation": "70:19:14",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "aacc5a17",
+            "id": 6791,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRandom",
+            "nameLocation": "106:9:14",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6789,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:14"
+            },
+            "returnParameters": {
+              "id": 6790,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "126:0:14"
+            },
+            "scope": 6792,
+            "src": "97:30:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 6793,
+        "src": "60:70:14",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:99:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.6",
+  "updatedAt": "2022-11-18T13:32:23.292Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

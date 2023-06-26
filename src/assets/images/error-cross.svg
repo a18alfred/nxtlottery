@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="243.001 210.732 506.266 506.267" width="506.266" height="506.267" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="496.133" y1="717" x2="496.133" y2="210.732">
+      <stop offset="0" style="stop-opacity:1; stop-color:#6F5CFF"/>
+      <stop offset="1" style="stop-opacity:1; stop-color:#DD0CFF"/>
+    </linearGradient>
+    <style type="text/css">
+   
+    .fil0 {fill:url(#id0);fill-rule:nonzero}
+   
+  </style>
+  </defs>
+  <g id="Слой_x0020_1">
+    <path class="fil0" d="M581.666 463.865l149.88 -149.88c23.627,-23.627 23.627,-61.92 0,-85.533 -23.613,-23.626 -61.909,-23.626 -85.519,0l-149.893 149.88 -149.897 -149.88c-23.61,-23.626 -61.906,-23.626 -85.519,0 -23.623,23.613 -23.623,61.906 0,85.533l149.88 149.88 -149.88 149.892c-23.623,23.613 -23.623,61.906 0,85.533l0 0c23.613,23.613 61.909,23.613 85.519,0l149.897 -149.893 149.893 149.893c23.61,23.613 61.906,23.613 85.519,0l0 0c23.627,-23.627 23.627,-61.92 0,-85.533l-149.88 -149.892z"/>
+  </g>
+</svg>

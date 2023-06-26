@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<link rel='icon' href='%PUBLIC_URL%/assets/images/favicon.ico'>
+	<link rel='apple-touch-icon' sizes='192x192' href='%PUBLIC_URL%/assets/images/logo192.png'>
+	<link rel='apple-touch-icon' sizes='512x512' href='%PUBLIC_URL%/assets/images/logo512.png'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0'>
+
+	<!--
+	  manifest.json provides metadata used when your web app is installed on a
+	  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	-->
+	<link rel='manifest' href='%PUBLIC_URL%/manifest.json'>
+	<link rel='preload' href='%PUBLIC_URL%/fonts/Inter-roman.var.woff2' as='font' type='font/woff2' crossorigin=''>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Inter custom';
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: block;
+            font-named-instance: 'Regular';
+            src: url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format('woff2 supports variations(gvar)'),
+            url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format('woff2-variations'),
+            url(%PUBLIC_URL%/fonts/Inter-roman.var.woff2) format('woff2');
+        }
+
+        @supports (font-variation-settings: normal) {
+            * {
+                font-family: 'Inter custom', sans-serif;
+            }
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            user-select: none;
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        html {
+            font-size: 16px;
+            font-variant: none;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #background-main-color {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            width: 100vw;
+            height: 100vh;
+            background: #ffffff;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            #background-main-color {
+                background: #141416;
+            }
+
+            html {
+                background-color: #141416;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            #background-main-color {
+                background: #ffffff;
+            }
+
+            html {
+                background-color: #ffffff;
+            }
+        }
+	</style>
+
+	<!-- Primary Meta Tags -->
+	<title>NxtLottery</title>
+	<meta name='title' content='NxtLottery'>
+	<meta name='description'
+		  content='Fully automated blockchain lottery. NxtLottery offers decentralised, open and fair lottery using next-generation on-chain randomness.'>
+
+	<!-- Open Graph / Facebook -->
+	<meta property='og:type' content='website'>
+	<meta property='og:url' content='https://nxtlottery.com/'>
+	<meta property='og:title' content='NxtLottery'>
+	<meta property='og:description'
+		  content='Fully automated blockchain lottery. NxtLottery offers decentralised, open and fair lottery using next-generation on-chain randomness.'>
+	<meta property='og:image' content='%PUBLIC_URL%/assets/images/social.webp'>
+
+	<!-- Twitter -->
+	<meta property='twitter:card' content='summary_large_image'>
+	<meta property='twitter:url' content='https://nxtlottery.com/'>
+	<meta property='twitter:title' content='NxtLottery'>
+	<meta property='twitter:description'
+		  content='Fully automated blockchain lottery. NxtLottery offers decentralised, open and fair lottery using next-generation on-chain randomness.'>
+	<meta property='twitter:image' content='%PUBLIC_URL%/assets/images/social.webp'>
+
+	<!-- iOS Splash -->
+	<meta name='apple-mobile-web-app-capable' content='yes'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2048-2732.png'
+		  media='(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2732-2048.png'
+		  media='(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1668-2388.png'
+		  media='(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2388-1668.png'
+		  media='(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1536-2048.png'
+		  media='(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2048-1536.png'
+		  media='(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1668-2224.png'
+		  media='(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2224-1668.png'
+		  media='(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1620-2160.png'
+		  media='(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2160-1620.png'
+		  media='(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1290-2796.png'
+		  media='(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2796-1290.png'
+		  media='(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1179-2556.png'
+		  media='(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2556-1179.png'
+		  media='(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1284-2778.png'
+		  media='(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2778-1284.png'
+		  media='(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1170-2532.png'
+		  media='(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2532-1170.png'
+		  media='(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1125-2436.png'
+		  media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2436-1125.png'
+		  media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1242-2688.png'
+		  media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2688-1242.png'
+		  media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-828-1792.png'
+		  media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1792-828.png'
+		  media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1242-2208.png'
+		  media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-2208-1242.png'
+		  media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-750-1334.png'
+		  media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1334-750.png'
+		  media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-640-1136.png'
+		  media='(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+	<link rel='apple-touch-startup-image' href='%PUBLIC_URL%/assets/splash/apple-splash-1136-640.png'
+		  media='(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)'>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id='app'>
+</div>
+<div id='background-main-color'></div>
+</body>
+</html>
